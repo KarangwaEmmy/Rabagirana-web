@@ -8,6 +8,8 @@ import PagesDropdown from "components/Dropdowns/PagesDropdown.js";
 import Logo from "assets/img/logo.png";
 
 export default function Navbar(props) {
+  const [ShowContactModal, setShowContactModal] = React.useState(false);
+  const [ShowDonateModal, setShowDonateModal] = React.useState(false);
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
@@ -76,13 +78,205 @@ export default function Navbar(props) {
               </li>
 
               <li className="flex items-center">
-                <a
-                  className=" active:text-yellow-400 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                <button
+                  className="active:text-yellow-400 text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  type="button"
                   style={{ backgroundColor: "#7B6093" }}
-                  href="#pablo"
+                  onClick={() => setShowContactModal(true)}
                 >
                   Contact us
-                </a>
+                </button>
+                {ShowContactModal ? (
+                  <>
+                    <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                      <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                        {/*content*/}
+                        {/* <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none"> */}
+                        {/*header*/}
+
+                        <div className="relative p-6 flex-auto">
+                          <div className="flex flex-wrap justify-center ">
+                            <div className="w-full  px-4">
+                              <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200">
+                                <div className="flex-auto p-5 lg:p-10">
+                                  <h4 className="text-2xl font-semibold">
+                                    Want to contact us?
+                                  </h4>
+                                  <p className="leading-relaxed mt-1 mb-4 text-blueGray-500">
+                                    Complete this form and we will get back to
+                                    you very soon.
+                                  </p>
+                                  <div className="relative w-full mb-3 mt-8">
+                                    <label
+                                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                      htmlFor="full-name"
+                                    >
+                                      Full Name
+                                    </label>
+                                    <input
+                                      type="text"
+                                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                      placeholder="Full Name"
+                                    />
+                                  </div>
+
+                                  <div className="relative w-full mb-3">
+                                    <label
+                                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                      htmlFor="email"
+                                    >
+                                      Email
+                                    </label>
+                                    <input
+                                      type="email"
+                                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                      placeholder="Email"
+                                    />
+                                  </div>
+
+                                  <div className="relative w-full mb-3">
+                                    <label
+                                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                      htmlFor="message"
+                                    >
+                                      Message
+                                    </label>
+                                    <textarea
+                                      rows="4"
+                                      cols="80"
+                                      className="border-0  placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                      placeholder="Type a message..."
+                                    />
+                                  </div>
+                                  <div className="text-center mt-6">
+                                    <button
+                                      className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1  transition duration-150 ease-in-out ..."
+                                      type="button"
+                                    >
+                                      Send Message
+                                    </button>
+                                  </div>
+                                  <div className="flex items-center justify-end border-t border-solid border-blueGray-200 rounded-b">
+                                    <button
+                                      className="text-red-500 background-transparent font-bold uppercase  text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                      type="button"
+                                      onClick={() => setShowContactModal(false)}
+                                    >
+                                      Close
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        {/*footer*/}
+                        {/* </div> */}
+                      </div>
+                    </div>
+                    <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                  </>
+                ) : null}
+              </li>
+              <li className="flex items-center">
+                <button
+                  className="active:text-yellow-400 text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  type="button"
+                  style={{ backgroundColor: "#7B6093" }}
+                  onClick={() => setShowDonateModal(true)}
+                >
+                  Donate
+                </button>
+                {ShowDonateModal ? (
+                  <>
+                    <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                      <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                        {/*content*/}
+                        {/* <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none"> */}
+                        {/*header*/}
+
+                        <div className="relative p-6 flex-auto">
+                          <div className="flex flex-wrap justify-center ">
+                            <div className="w-full  px-4">
+                              <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200">
+                                <div className="flex-auto p-5 lg:p-10">
+                                  <h4 className="text-2xl font-semibold">
+                                    Want to donate to us?
+                                  </h4>
+                                  <p className="leading-relaxed mt-1 mb-4 text-blueGray-500">
+                                    Complete this form and we will contact you
+                                    for donation process
+                                  </p>
+                                  <div className="relative w-full mb-3 mt-8">
+                                    <label
+                                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                      htmlFor="full-name"
+                                    >
+                                      Full Name
+                                    </label>
+                                    <input
+                                      type="text"
+                                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                      placeholder="Full Name"
+                                    />
+                                  </div>
+
+                                  <div className="relative w-full mb-3">
+                                    <label
+                                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                      htmlFor="email"
+                                    >
+                                      Email
+                                    </label>
+                                    <input
+                                      type="email"
+                                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                      placeholder="Email"
+                                    />
+                                  </div>
+
+                                  <div className="relative w-full mb-3">
+                                    <label
+                                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                      htmlFor="full-name"
+                                    >
+                                      Amount
+                                    </label>
+                                    <input
+                                      type="text"
+                                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                      placeholder="Amount in Rfw..."
+                                    />
+                                  </div>
+                                  <div className="text-center mt-6">
+                                    <button
+                                      className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1  transition duration-150 ease-in-out ..."
+                                      type="button"
+                                    >
+                                      Send
+                                    </button>
+                                  </div>
+                                  <div className="flex items-center justify-end border-t border-solid border-blueGray-200 rounded-b">
+                                    <button
+                                      className="text-red-500 background-transparent font-bold uppercase  text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                      type="button"
+                                      onClick={() => setShowDonateModal(false)}
+                                    >
+                                      Close
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        {/*footer*/}
+                        {/* </div> */}
+                      </div>
+                    </div>
+                    <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                  </>
+                ) : null}
               </li>
             </ul>
           </div>

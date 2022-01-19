@@ -5,6 +5,9 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "assets/styles/tailwind.css";
 
+// custom
+import Carousel from "components/Carousel/index";
+
 // layouts
 
 import Admin from "layouts/Admin.js";
@@ -37,6 +40,7 @@ ReactDOM.render(
       <Route path="/stories" component={Stories} />
       <Route path="/profile" exact component={Profile} />
       <Route path="/" exact component={Landing} />
+      <Route path="/carousel" exact component={Carousel} />
       {/* add redirect for first page */}
       <Redirect from="*" to="/" />
     </Switch>

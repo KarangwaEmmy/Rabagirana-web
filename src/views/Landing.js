@@ -72,19 +72,126 @@ export default function Landing() {
               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
-                    <div
+                    {/* <div
                       className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
                       style={{ backgroundColor: "#3b7949" }}
                     >
                       <i className="fas fa-award"></i>
+                    </div> */}
+                    <h6 className="text-xl font-semibold">Upcomig events</h6>
+
+                    <div class="container flex flex-col mx-auto w-full items-center justify-center">
+                      <ul class="flex flex-col w-full">
+                        <li class="border-gray-400 flex flex-row mb-2">
+                          <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
+                            <div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
+                              <a href="#" class="block relative">
+                                <img
+                                  alt="profil"
+                                  src="/images/person/6.jpg"
+                                  class="mx-auto object-cover rounded-full h-10 w-10 "
+                                />
+                              </a>
+                            </div>
+                            <div class="flex-1 pl-1 md:mr-16">
+                              <div class="font-medium dark:text-white">
+                                Church concert
+                              </div>
+                              <div class="text-gray-600 dark:text-gray-200 text-sm">
+                                By Senior pastor
+                              </div>
+                            </div>
+                            {/* <div class="text-gray-600 dark:text-gray-200 text-xs">
+                              6:00 AM
+                            </div> */}
+                            <button class="w-24 text-right flex justify-end">
+                              <svg
+                                width="12"
+                                fill="currentColor"
+                                height="12"
+                                class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500"
+                                viewBox="0 0 1792 1792"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="border-gray-400 flex flex-row mb-2">
+                          <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
+                            <div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
+                              <a href="#" class="block relative">
+                                <img
+                                  alt="profil"
+                                  src="/images/person/10.jpg"
+                                  class="mx-auto object-cover rounded-full h-10 w-10 "
+                                />
+                              </a>
+                            </div>
+                            <div class="flex-1 pl-1 md:mr-16">
+                              <div class="font-medium dark:text-white">
+                                Children bootcamp
+                              </div>
+                              <div class="text-gray-600 dark:text-gray-200 text-sm">
+                                Charlie Moi
+                              </div>
+                            </div>
+                            {/* <div class="text-gray-600 dark:text-gray-200 text-xs">
+                              6:00 AM
+                            </div> */}
+                            <button class="w-24 text-right flex justify-end">
+                              <svg
+                                width="12"
+                                fill="currentColor"
+                                height="12"
+                                class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500"
+                                viewBox="0 0 1792 1792"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="border-gray-400 flex flex-row mb-2">
+                          <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
+                            <div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
+                              <a href="#" class="block relative">
+                                <img
+                                  alt="profil"
+                                  src="/images/person/3.jpg"
+                                  class="mx-auto object-cover rounded-full h-10 w-10 "
+                                />
+                              </a>
+                            </div>
+                            <div class="flex-1 pl-1 md:mr-16">
+                              <div class="font-medium dark:text-white">
+                                COmmunity{" "}
+                              </div>
+                              <div class="text-gray-600 dark:text-gray-200 text-sm">
+                                Marine Jeanne
+                              </div>
+                            </div>
+                            <div class="text-gray-600 dark:text-gray-200 text-xs">
+                              6:00 AM
+                            </div>
+                            <button class="w-24 text-right flex justify-end">
+                              <svg
+                                width="12"
+                                fill="currentColor"
+                                height="12"
+                                class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500"
+                                viewBox="0 0 1792 1792"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <h6 className="text-xl font-semibold">Vision</h6>
-                    <p className="mt-2 mb-4 text-blueGray-500">
-                      Formerly known as HWEC (Healing Wounds of Ethnic
-                      Conflict), HHTN is a Bible-based approach used in
-                      workshops to help individuals and communities receive
-                      healing, forgiveness and reconciliation. <br />
-                    </p>
                   </div>
                 </div>
               </div>
@@ -98,7 +205,7 @@ export default function Landing() {
                     >
                       <i className="fas fa-retweet"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Mission</h6>
+                    <h6 className="text-xl font-semibold">Stories of impact</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
                       Rabagirana Ministries defines Community Development as a
                       holistic Biblical approach grounded in principles of
@@ -111,20 +218,17 @@ export default function Landing() {
 
               <div className="pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-                  <div className="px-4 py-5 flex-auto">
-                    <div
-                      className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
-                      style={{ backgroundColor: "#FBB821" }}
-                    >
-                      <i className="fas fa-fingerprint"></i>
-                    </div>
-                    <h6 className="text-xl font-semibold">Strategies</h6>
-                    <p className="mt-2 mb-4 text-blueGray-500">
-                      Rabagirana Ministries defines Leadership development as
-                      the process of enhancing an individual's capacity to serve
-                      in leadership roles within an organization or community
-                    </p>
-                  </div>
+                  <iframe
+                    className="rounded-lg"
+                    src={`https://www.youtube.com/embed/rokGy0huYEA`}
+                    frameBorder="0"
+                    width="403"
+                    height="280"
+                    borderRadius="10px"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title="Embedded youtube"
+                  />
                 </div>
               </div>
             </div>
@@ -298,7 +402,7 @@ export default function Landing() {
           </div>
         </section>
 
-        <section className="pt-20 pb-48">
+        {/* <section className="pt-20 pb-48">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
@@ -453,9 +557,9 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="pb-20 relative block bg-blueGray-800">
+        {/* <section className="pb-20 relative block bg-blueGray-800">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
             style={{ transform: "translateZ(0)" }}
@@ -525,8 +629,8 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </section>
-        <section className="relative block py-24 lg:pt-0 bg-blueGray-800">
+        </section> */}
+        {/* <section className="relative block py-24 lg:pt-0 bg-blueGray-800">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
               <div className="w-full lg:w-6/12 px-4">
@@ -593,7 +697,7 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </>
