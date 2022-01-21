@@ -1082,12 +1082,6 @@ select {
   }
 }
 
-.space-y-24 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(6rem * var(--tw-space-y-reverse));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
@@ -1303,19 +1297,9 @@ select {
   border-collapse: collapse;
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
-}
-
 .border-lightBlue-700 {
   --tw-border-opacity: 1;
   border-color: rgba(3, 105, 161, var(--tw-border-opacity));
-}
-
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgba(228, 228, 231, var(--tw-border-opacity));
 }
 
 .border-gray-400 {
@@ -1564,8 +1548,8 @@ select {
   height: 5rem;
 }
 
-.h-40 {
-  height: 10rem;
+.h-32 {
+  height: 8rem;
 }
 
 .h-auto {
@@ -1875,10 +1859,6 @@ select {
   margin-top: 8rem;
 }
 
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
 .mt-48 {
   margin-top: 12rem;
 }
@@ -2124,9 +2104,9 @@ select {
   padding-right: 1.5rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-9 {
@@ -2340,14 +2320,6 @@ select {
 
 .left-auto {
   left: auto;
-}
-
-.-top-16 {
-  top: -4rem;
-}
-
-.right-1\/2 {
-  right: 50%;
 }
 
 .top-2\/4 {
@@ -2702,14 +2674,6 @@ select {
   width: 6rem;
 }
 
-.w-40 {
-  width: 10rem;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
 .w-auto {
   width: auto;
 }
@@ -2762,6 +2726,10 @@ select {
   gap: 1rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -2794,10 +2762,6 @@ select {
           transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-1\/2 {
-  --tw-translate-x: 50%;
-}
-
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
 }
@@ -2816,12 +2780,6 @@ select {
   transition-duration: 150ms;
 }
 
-.transition-colors {
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .ease-linear {
   transition-timing-function: linear;
 }
@@ -2832,10 +2790,6 @@ select {
 
 .duration-150 {
   transition-duration: 150ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
 }
 
 .duration-500 {
@@ -3012,12 +2966,6 @@ select {
 }
 
 @media (min-width: 768px) {
-  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
   .md\:block {
     display: block;
   }
@@ -3056,6 +3004,11 @@ select {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-6xl {
@@ -3189,6 +3142,10 @@ select {
     text-align: left;
   }
 
+  .md\:w-48 {
+    width: 12rem;
+  }
+
   .md\:w-60 {
     width: 15rem;
   }
@@ -3223,6 +3180,10 @@ select {
 
   .md\:gap-14 {
     gap: 3.5rem;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -3279,6 +3240,11 @@ select {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:leading-6 {
@@ -3469,6 +3435,10 @@ select {
   .lg\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1280px) {
@@ -3482,6 +3452,10 @@ select {
 
   .xl\:pl-48 {
     padding-left: 12rem;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50%;
   }
 
   .xl\:w-1\/3 {
@@ -3506,6 +3480,10 @@ select {
 
   .xl\:w-9\/12 {
     width: 75%;
+  }
+
+  .xl\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 
@@ -3882,6 +3860,11 @@ select {
   .\32xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .\32xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .\32xl\:pr-24 {

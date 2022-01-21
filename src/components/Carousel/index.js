@@ -1,66 +1,29 @@
 import React from "react";
-import { render } from "react-dom";
-// import Header from './header';
-import Slider from "react-animated-slider-2";
-import "react-animated-slider-2/build/horizontal.css";
-// import "normalize.css/normalize.css";
-// import "./slider-animations.css";
-// import "./custom.css";
+import { UncontrolledCarousel } from "reactstrap";
+// bootstrap
+//import "bootstrap/dist/css/bootstrap.min.css";
 
-const content = [
+const items = [
   {
-    title: "Vulputate Mollis Ultricies Fermentum Parturient",
-    description:
-      "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
-    button: "Read More",
-    image: "https://i.imgur.com/ZXBtVw7.jpg",
-    user: "Luan Gjokaj",
-    userProfile: "https://i.imgur.com/JSW6mEk.png",
+    src: "https://s7.postimg.cc/ujy8zz7vv/5_3x.png",
+    altText: "Slide 1",
+    caption: "Slide 1",
+    header: "Slide 1 Header",
   },
   {
-    title: "Tortor Dapibus Commodo Aenean Quam",
-    description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.",
-    button: "Discover",
-    image: "https://i.imgur.com/DCdBXcq.jpg",
-    user: "Erich Behrens",
-    userProfile: "https://i.imgur.com/0Clfnu7.png",
+    src: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E",
+    altText: "Slide 2",
+    caption: "Slide 2",
+    header: "Slide 2 Header",
   },
   {
-    title: "Phasellus volutpat metus",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.",
-    button: "Buy now",
-    image: "https://i.imgur.com/DvmN8Hx.jpg",
-    user: "Bruno Vizovskyy",
-    userProfile: "https://i.imgur.com/4KeKvtH.png",
+    src: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E",
+    altText: "Slide 3",
+    caption: "Slide 3",
+    header: "Slide 3 Header",
   },
 ];
 
-const Carousel = () => (
-  <div>
-    <Slider>
-      {content.map((item, index) => (
-        <div
-          key={index}
-          className="slider-content"
-          style={{ background: `url('${item.image}') no-repeat center center` }}
-        >
-          <div className="inner">
-            <h1>{item.title}</h1>
-            <p>{item.description}</p>
-            <button>{item.button}</button>
-          </div>
-          <section>
-            <img src={item.userProfile} alt={item.user} />
-            <span>
-              Posted by <strong>{item.user}</strong>
-            </span>
-          </section>
-        </div>
-      ))}
-    </Slider>
-  </div>
-);
+const Example = () => <UncontrolledCarousel items={items} />;
 
-export default Carousel;
+export default Example;
