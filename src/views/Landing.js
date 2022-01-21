@@ -7,7 +7,7 @@ import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
 import Bg from "assets/img/background.jpg";
 import vacation from "assets/img/vacation.jpg";
-import Community from "assets/img/Community.jpg";
+import Community from "assets/img/director.jpg";
 import User from "assets/img/user.png";
 
 export default function Landing() {
@@ -72,12 +72,12 @@ export default function Landing() {
               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
-                    {/* <div
+                    <div
                       className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
                       style={{ backgroundColor: "#3b7949" }}
                     >
                       <i className="fas fa-award"></i>
-                    </div> */}
+                    </div>
                     <h6 className="text-xl font-semibold">Upcomig events</h6>
 
                     <div class="container flex flex-col mx-auto w-full items-center justify-center">
@@ -154,7 +154,7 @@ export default function Landing() {
                             </button>
                           </div>
                         </li>
-                        <li class="border-gray-400 flex flex-row mb-2">
+                        {/* <li class="border-gray-400 flex flex-row mb-2">
                           <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
                             <div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
                               <a href="#" class="block relative">
@@ -189,7 +189,7 @@ export default function Landing() {
                               </svg>
                             </button>
                           </div>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </div>
@@ -207,10 +207,13 @@ export default function Landing() {
                     </div>
                     <h6 className="text-xl font-semibold">Stories of impact</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Rabagirana Ministries defines Community Development as a
-                      holistic Biblical approach grounded in principles of
-                      empowerment, human rights, inclusion, social justice, and
-                      collective action.
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
                     </p>
                   </div>
                 </div>
@@ -223,7 +226,7 @@ export default function Landing() {
                     src={`https://www.youtube.com/embed/rokGy0huYEA`}
                     frameBorder="0"
                     width="403"
-                    height="280"
+                    height="380"
                     borderRadius="10px"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -235,11 +238,11 @@ export default function Landing() {
 
             <div className="flex flex-wrap items-center mt-32">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-                <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
+                {/* <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                   <i className="fas fa-user-friends text-xl"></i>
-                </div>
+                </div> */}
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                  Rabagirana's story of impact
+                  Fresh manner
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-800">
                   There is no readily available road map to reconciliation.
@@ -257,7 +260,7 @@ export default function Landing() {
                   to="/programs/community"
                   className="font-bold text-blueGray-700 mt-8"
                 >
-                  VIEW MORE...
+                  READ MORE...
                 </Link>
               </div>
 
@@ -265,34 +268,10 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words w-full  shadow-lg rounded-full">
                   <img
                     alt="..."
+                    style={{ height: "380px" }}
                     src={vacation}
-                    className="w-full align-middle rounded-t-lg"
+                    className="w-full align-middle rounded-lg"
                   />
-                  <blockquote
-                    className="relative p-8 mb-4"
-                    style={{ backgroundColor: "#FBB821" }}
-                  >
-                    {/* <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      className="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        className=" fill-current"
-                        style={{ backgroundColor: "#FBB821" }}
-                      ></polygon>
-                    </svg> */}
-                    <h4 className="text-xl font-bold text-white">
-                      Top Notch Services
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      The Arctic Ocean freezes every winter and much of the
-                      sea-ice then thaws every summer, and that process will
-                      continue whatever happens.
-                    </p>
-                  </blockquote>
                 </div>
               </div>
             </div>
@@ -335,12 +314,10 @@ export default function Landing() {
                     className=" p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-lightBlue-300"
                     style={{ backgroundColor: "#7B6093" }}
                   >
-                    <i className="fas fa-rocket text-xl"></i>
+                    <i class="fas fa-universal-access"></i>
                   </div>
-                  <h3 className="text-3xl font-semibold">
-                    Community Engagement
-                  </h3>
-                  <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
+                  <h3 className="text-3xl font-semibold">Meet our heroes</h3>
+                  <p className="mt-4 text-md leading-relaxed text-blueGray-500">
                     The Arctic Ocean freezes every winter and much of the
                     sea-ice then thaws every summer, and that process will
                     continue whatever happens.
@@ -357,7 +334,9 @@ export default function Landing() {
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-blueGray-500">Peace building</h4>
+                          <h4 className="text-md text-blueGray-500">
+                            Peace building
+                          </h4>
                         </div>
                       </div>
                     </li>
@@ -372,7 +351,7 @@ export default function Landing() {
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-blueGray-500">
+                          <h4 className="text-blueGray-500 text-md">
                             Poverty Reduction
                           </h4>
                         </div>
@@ -389,7 +368,7 @@ export default function Landing() {
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-blueGray-500">
+                          <h4 className="text-blueGray-500 text-md">
                             Community outreach
                           </h4>
                         </div>
