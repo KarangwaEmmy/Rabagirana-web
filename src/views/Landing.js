@@ -8,43 +8,16 @@ import Footer from "components/Footers/Footer.js";
 import Bg from "assets/img/background.jpg";
 import vacation from "assets/img/vacation.jpg";
 import Community from "assets/img/director.jpg";
+import Carousel from "../components/Carousel/index";
 import User from "assets/img/user.png";
 
 export default function Landing() {
   return (
     <>
       <Navbar transparent />
+      <Carousel />
       <main>
-        <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
-          <div className="absolute top-0 w-full h-full bg-center bg-cover">
-            <img
-              src={Bg}
-              alt="backgroung"
-              className="absolute top-0 w-full h-full bg-center bg-cover"
-            />
-            <span
-              id="blackOverlay"
-              className="w-full h-full absolute opacity-75 bg-black"
-            ></span>
-          </div>
-          <div className="container relative mx-auto">
-            <div className="items-center flex flex-wrap">
-              <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <div className="pr-12">
-                  <h1 className="text-white font-semibold text-5xl mt-10">
-                    Souls Can Shine As Bright As{" "}
-                    <span style={{ color: "#FBB821" }}>Stars</span>
-                  </h1>
-                  <p className="mt-4 text-lg text-blueGray-200">
-                    There is no readily available road map to reconciliation.
-                    There is no quick fix or simple prescription for healing the
-                    wounds and divisions of a society in the aftermath of
-                    sustained violence.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="relative  flex content-center items-center justify-center min-h-screen-75">
           <div
             className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
             style={{ transform: "translateZ(0)" }}
@@ -76,7 +49,7 @@ export default function Landing() {
                       className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
                       style={{ backgroundColor: "#3b7949" }}
                     >
-                      <i className="fas fa-award"></i>
+                      <i className="fas fa-calendar  "></i>
                     </div>
                     <h6 className="text-xl font-semibold">Upcomig events</h6>
 
@@ -101,9 +74,6 @@ export default function Landing() {
                                 By Senior pastor
                               </div>
                             </div>
-                            {/* <div class="text-gray-600 dark:text-gray-200 text-xs">
-                              6:00 AM
-                            </div> */}
                             <button class="w-24 text-right flex justify-end">
                               <svg
                                 width="12"
@@ -137,9 +107,7 @@ export default function Landing() {
                                 Charlie Moi
                               </div>
                             </div>
-                            {/* <div class="text-gray-600 dark:text-gray-200 text-xs">
-                              6:00 AM
-                            </div> */}
+
                             <button class="w-24 text-right flex justify-end">
                               <svg
                                 width="12"
@@ -154,42 +122,6 @@ export default function Landing() {
                             </button>
                           </div>
                         </li>
-                        {/* <li class="border-gray-400 flex flex-row mb-2">
-                          <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
-                            <div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
-                              <a href="#" class="block relative">
-                                <img
-                                  alt="profil"
-                                  src="/images/person/3.jpg"
-                                  class="mx-auto object-cover rounded-full h-10 w-10 "
-                                />
-                              </a>
-                            </div>
-                            <div class="flex-1 pl-1 md:mr-16">
-                              <div class="font-medium dark:text-white">
-                                COmmunity{" "}
-                              </div>
-                              <div class="text-gray-600 dark:text-gray-200 text-sm">
-                                Marine Jeanne
-                              </div>
-                            </div>
-                            <div class="text-gray-600 dark:text-gray-200 text-xs">
-                              6:00 AM
-                            </div>
-                            <button class="w-24 text-right flex justify-end">
-                              <svg
-                                width="12"
-                                fill="currentColor"
-                                height="12"
-                                class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500"
-                                viewBox="0 0 1792 1792"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z"></path>
-                              </svg>
-                            </button>
-                          </div>
-                        </li> */}
                       </ul>
                     </div>
                   </div>
@@ -203,7 +135,7 @@ export default function Landing() {
                       className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
                       style={{ backgroundColor: "#7B6093" }}
                     >
-                      <i className="fas fa-retweet"></i>
+                      <i className="fas fa-archive"></i>
                     </div>
                     <h6 className="text-xl font-semibold">Stories of impact</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
@@ -316,13 +248,17 @@ export default function Landing() {
                   >
                     <i class="fas fa-universal-access"></i>
                   </div>
-                  <h3 className="text-3xl font-semibold">Meet our heroes</h3>
+                  <h3 className="text-3xl font-semibold">Meet our hero</h3>
                   <p className="mt-4 text-md leading-relaxed text-blueGray-500">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged.
                   </p>
-                  <ul className="list-none mt-6">
+                  <ul className="flex list-none mt-6">
                     <li className="py-2">
                       <div className="flex items-center">
                         <div>
