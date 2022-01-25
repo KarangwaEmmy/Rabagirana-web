@@ -1,12 +1,33 @@
-import { Carousel } from "react-carousel-minimal";
-
 import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
-import About from "assets/img/about.jpeg";
+import about from "assets/img/about.jpeg";
 import Team from "assets/img/team.jpg";
+import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import img1 from "assets/img/CEI_6002.jpg";
+import img2 from "assets/img/CEI_6005.jpg";
+import img3 from "assets/img/CEI_6007.jpg";
+import img4 from "assets/img/CEI_6011.jpg";
 export default function About() {
+	const responsive = {
+		superLargeDesktop: {
+			// the naming can be any, depends on you.
+			breakpoint: { max: 4000, min: 3000 },
+			items: 5,
+		},
+		desktop: {
+			breakpoint: { max: 3000, min: 1024 },
+			items: 3,
+		},
+		tablet: {
+			breakpoint: { max: 1024, min: 464 },
+			items: 2,
+		},
+		mobile: {
+			breakpoint: { max: 464, min: 0 },
+			items: 1,
+		},
+	};
 	return (
 		<>
 			<Navbar transparent />
@@ -149,7 +170,7 @@ export default function About() {
 															</p>
 															<div className="w-1/2">
 																<img
-																	src={About}
+																	src={about}
 																	width={200}
 																	alt="Purple flowers on a book"
 																	className="w-full"
@@ -179,7 +200,7 @@ export default function About() {
 														<div className="w-full flex mt-8">
 															<div className="w-1/2">
 																<img
-																	src={About}
+																	src={about}
 																	width={200}
 																	alt="Purple flowers on a book"
 																	className="w-full"
@@ -219,18 +240,45 @@ export default function About() {
 																see from the story of Eliya and Gaston
 															</p>
 														</div>
-
-														{/* <Carousel>
-															<div>Item 1</div>
-															<div>Item 2</div>
-															<div>Item 3</div>
-															<div>Item 4</div>
-														</Carousel> */}
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
+									<div>
+										<h2 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mt-4">
+											Meet Our Team
+										</h2>
+									</div>
+									<Carousel
+										responsive={responsive}
+										className="w-full px-4 text-center"
+									>
+										<div className="relative flex flex-col min-w-0 break-words bg-white mb-8 shadow-lg rounded-lg mx-4">
+											<div className=" px-4 py-5 flex-auto">
+												<img src={img1} alt="" />
+												<h6 className="text-xl font-semibold">Director</h6>
+											</div>
+										</div>
+										<div className="relative flex flex-col min-w-0 break-words bg-white mb-8 shadow-lg rounded-lg mx-4">
+											<div className="px-4 py-5 flex-auto">
+												<img src={img2} alt="" />
+												<h6 className="text-xl font-semibold">Administrator</h6>
+											</div>
+										</div>
+										<div className="relative flex flex-col min-w-0 break-words bg-white mb-8 shadow-lg rounded-lg mx-4">
+											<div className="px-4 py-5 flex-auto">
+												<img src={img3} alt="" />
+												<h6 className="text-xl font-semibold">Coordicator</h6>
+											</div>
+										</div>
+										<div className="relative flex flex-col min-w-0 break-words bg-white mb-8 shadow-lg rounded-lg mx-4">
+											<div className="px-4 py-5 flex-auto">
+												<img src={img4} alt="" />
+												<h6 className="text-xl font-semibold">Manager</h6>
+											</div>
+										</div>
+									</Carousel>
 								</div>
 							</div>
 						</div>
