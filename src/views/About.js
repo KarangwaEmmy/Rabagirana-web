@@ -1,4 +1,4 @@
-import React from "react";
+import { Carousel } from "react-carousel-minimal";
 
 import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
@@ -6,7 +6,7 @@ import About from "assets/img/about.jpeg";
 import Team from "assets/img/team.jpg";
 import "react-multi-carousel/lib/styles.css";
 
-export default function Profile() {
+export default function About() {
 	return (
 		<>
 			<Navbar transparent />
