@@ -39,7 +39,7 @@ export default function Landing() {
           </div>
         </div>
 
-        <section className="pb-20 bg-blueGray-200 -mt-24">
+        <section className=" bg-blueGray-200 -mt-24">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap">
               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -49,10 +49,49 @@ export default function Landing() {
                       className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
                       style={{ backgroundColor: "#3b7949" }}
                     >
+                      <i className="fa fa-book"></i>
+                    </div>
+
+                    <h6 className="text-xl font-semibold">Stories of impact</h6>
+                    <p className="mt-2 mb-4 text-blueGray-500">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full md:w-4/12 px-4 text-center">
+                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                  <iframe
+                    className="rounded-lg"
+                    src={`https://www.youtube.com/watch?v=azZNPXsVnfM`}
+                    frameBorder="0"
+                    width="403"
+                    height="380"
+                    borderRadius="10px"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title="Embedded youtube"
+                  />
+                </div>
+              </div>
+
+              <div className="pt-6 w-full md:w-4/12 px-4 text-center">
+                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                  <div className="px-4 py-5 flex-auto">
+                    <div
+                      className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
+                      style={{ backgroundColor: "#7B6093" }}
+                    >
                       <i className="fas fa-calendar  "></i>
                     </div>
                     <h6 className="text-xl font-semibold">Upcomig events</h6>
-
                     <div class="container flex flex-col mx-auto w-full items-center justify-center">
                       <ul class="flex flex-col w-full">
                         <li class="border-gray-400 flex flex-row mb-2">
@@ -125,45 +164,6 @@ export default function Landing() {
                       </ul>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div className="w-full md:w-4/12 px-4 text-center">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-                  <div className="px-4 py-5 flex-auto">
-                    <div
-                      className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
-                      style={{ backgroundColor: "#7B6093" }}
-                    >
-                      <i className="fas fa-archive"></i>
-                    </div>
-                    <h6 className="text-xl font-semibold">Stories of impact</h6>
-                    <p className="mt-2 mb-4 text-blueGray-500">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-6 w-full md:w-4/12 px-4 text-center">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-                  <iframe
-                    className="rounded-lg"
-                    src={`https://www.youtube.com/embed/rokGy0huYEA`}
-                    frameBorder="0"
-                    width="403"
-                    height="380"
-                    borderRadius="10px"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title="Embedded youtube"
-                  />
                 </div>
               </div>
             </div>
@@ -270,9 +270,7 @@ export default function Landing() {
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-md text-blueGray-500">
-                            Peace building
-                          </h4>
+                          <h4 className="text-md text-blueGray-500">Phone</h4>
                         </div>
                       </div>
                     </li>

@@ -34,7 +34,7 @@ export default function index() {
         style={{
           textAlign: "center",
           maxWidth: "100%",
-          maxHeight: "500px",
+          maxHeight: "90px",
           margin: "0px auto",
         }}
       />
