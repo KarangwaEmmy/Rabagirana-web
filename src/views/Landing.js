@@ -38,136 +38,134 @@ export default function Landing() {
 						</svg>
 					</div>
 				</div>
+        <section className=" bg-blueGray-200 -mt-24">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-wrap">
+              <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                  <div className="px-4 py-5 flex-auto">
+                    <div
+                      className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
+                      style={{ backgroundColor: "#3b7949" }}
+                    >
+                      <i className="fa fa-book"></i>
+                    </div>
 
-				<section className="pb-20 bg-blueGray-200 -mt-24">
-					<div className="container mx-auto px-4">
-						<div className="flex flex-wrap">
-							<div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-								<div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-									<div className="px-4 py-5 flex-auto">
-										<div
-											className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
-											style={{ backgroundColor: "#3b7949" }}
-										>
-											<i className="fas fa-calendar  "></i>
-										</div>
-										<h6 className="text-xl font-semibold">Upcomig events</h6>
+                    <h6 className="text-xl font-semibold">Stories of impact</h6>
+                    <p className="mt-2 mb-4 text-blueGray-500">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-										<div class="container flex flex-col mx-auto w-full items-center justify-center">
-											<ul class="flex flex-col w-full">
-												<li class="border-gray-400 flex flex-row mb-2">
-													<div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
-														<div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
-															<a href="#" class="block relative">
-																<img
-																	alt="profil"
-																	src="/images/person/6.jpg"
-																	class="mx-auto object-cover rounded-full h-10 w-10 "
-																/>
-															</a>
-														</div>
-														<div class="flex-1 pl-1 md:mr-16">
-															<div class="font-medium dark:text-white">
-																Church concert
-															</div>
-															<div class="text-gray-600 dark:text-gray-200 text-sm">
-																By Senior pastor
-															</div>
-														</div>
-														<button class="w-24 text-right flex justify-end">
-															<svg
-																width="12"
-																fill="currentColor"
-																height="12"
-																class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500"
-																viewBox="0 0 1792 1792"
-																xmlns="http://www.w3.org/2000/svg"
-															>
-																<path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z"></path>
-															</svg>
-														</button>
-													</div>
-												</li>
-												<li class="border-gray-400 flex flex-row mb-2">
-													<div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
-														<div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
-															<a href="#" class="block relative">
-																<img
-																	alt="profil"
-																	src="/images/person/10.jpg"
-																	class="mx-auto object-cover rounded-full h-10 w-10 "
-																/>
-															</a>
-														</div>
-														<div class="flex-1 pl-1 md:mr-16">
-															<div class="font-medium dark:text-white">
-																Children bootcamp
-															</div>
-															<div class="text-gray-600 dark:text-gray-200 text-sm">
-																Charlie Moi
-															</div>
-														</div>
+              <div className="w-full md:w-4/12 px-4 text-center">
+                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                  <iframe
+                    className="rounded-lg"
+                    src={`https://www.youtube.com/watch?v=azZNPXsVnfM`}
+                    frameBorder="0"
+                    width="403"
+                    height="380"
+                    borderRadius="10px"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title="Embedded youtube"
+                  />
+                </div>
+              </div>
 
-														<button class="w-24 text-right flex justify-end">
-															<svg
-																width="12"
-																fill="currentColor"
-																height="12"
-																class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500"
-																viewBox="0 0 1792 1792"
-																xmlns="http://www.w3.org/2000/svg"
-															>
-																<path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z"></path>
-															</svg>
-														</button>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
+              <div className="pt-6 w-full md:w-4/12 px-4 text-center">
+                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                  <div className="px-4 py-5 flex-auto">
+                    <div
+                      className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
+                      style={{ backgroundColor: "#7B6093" }}
+                    >
+                      <i className="fas fa-calendar  "></i>
+                    </div>
+                    <h6 className="text-xl font-semibold">Upcomig events</h6>
+                    <div class="container flex flex-col mx-auto w-full items-center justify-center">
+                      <ul class="flex flex-col w-full">
+                        <li class="border-gray-400 flex flex-row mb-2">
+                          <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
+                            <div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
+                              <a href="#" class="block relative">
+                                <img
+                                  alt="profil"
+                                  src="/images/person/6.jpg"
+                                  class="mx-auto object-cover rounded-full h-10 w-10 "
+                                />
+                              </a>
+                            </div>
+                            <div class="flex-1 pl-1 md:mr-16">
+                              <div class="font-medium dark:text-white">
+                                Church concert
+                              </div>
+                              <div class="text-gray-600 dark:text-gray-200 text-sm">
+                                By Senior pastor
+                              </div>
+                            </div>
+                            <button class="w-24 text-right flex justify-end">
+                              <svg
+                                width="12"
+                                fill="currentColor"
+                                height="12"
+                                class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500"
+                                viewBox="0 0 1792 1792"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="border-gray-400 flex flex-row mb-2">
+                          <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
+                            <div class="flex flex-col w-10 h-10 justify-center items-center mr-4">
+                              <a href="#" class="block relative">
+                                <img
+                                  alt="profil"
+                                  src="/images/person/10.jpg"
+                                  class="mx-auto object-cover rounded-full h-10 w-10 "
+                                />
+                              </a>
+                            </div>
+                            <div class="flex-1 pl-1 md:mr-16">
+                              <div class="font-medium dark:text-white">
+                                Children bootcamp
+                              </div>
+                              <div class="text-gray-600 dark:text-gray-200 text-sm">
+                                Charlie Moi
+                              </div>
+                            </div>
 
-							<div className="w-full md:w-4/12 px-4 text-center">
-								<div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-									<div className="px-4 py-5 flex-auto">
-										<div
-											className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
-											style={{ backgroundColor: "#7B6093" }}
-										>
-											<i className="fas fa-archive"></i>
-										</div>
-										<h6 className="text-xl font-semibold">Stories of impact</h6>
-										<p className="mt-2 mb-4 text-blueGray-500">
-											Lorem Ipsum is simply dummy text of the printing and
-											typesetting industry. Lorem Ipsum has been the industry's
-											standard dummy text ever since the 1500s, when an unknown
-											printer took a galley of type and scrambled it to make a
-											type specimen book. It has survived not only five
-											centuries, but also the leap into electronic typesetting,
-											remaining essentially unchanged.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div className="pt-6 w-full md:w-4/12 px-4 text-center">
-								<div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-									<iframe
-										className="rounded-lg"
-										src={`https://www.youtube.com/embed/rokGy0huYEA`}
-										frameBorder="0"
-										width="403"
-										height="380"
-										borderRadius="10px"
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-										allowFullScreen
-										title="Embedded youtube"
-									/>
-								</div>
-							</div>
-						</div>
-
+                            <button class="w-24 text-right flex justify-end">
+                              <svg
+                                width="12"
+                                fill="currentColor"
+                                height="12"
+                                class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500"
+                                viewBox="0 0 1792 1792"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z"></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 						<div className="flex flex-wrap items-center mt-32">
 							<div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
 								{/* <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
@@ -230,92 +228,89 @@ export default function Landing() {
 							></polygon>
 						</svg>
 					</div>
-
-					<div className="container mx-auto px-4">
-						<div className="items-center flex flex-wrap">
-							<div className="w-full md:w-4/12 ml-auto mr-auto px-4">
-								<img
-									alt="..."
-									className="max-w-full rounded-lg shadow-lg"
-									src={Community}
-								/>
-							</div>
-							<div className="w-full md:w-5/12 ml-auto mr-auto px-4">
-								<div className="md:pr-12">
-									<div
-										className=" p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-lightBlue-300"
-										style={{ backgroundColor: "#7B6093" }}
-									>
-										<i class="fas fa-universal-access"></i>
-									</div>
-									<h3 className="text-3xl font-semibold">Meet our hero</h3>
-									<p className="mt-4 text-md leading-relaxed text-blueGray-500">
-										Lorem Ipsum is simply dummy text of the printing and
-										typesetting industry. Lorem Ipsum has been the industry's
-										standard dummy text ever since the 1500s, when an unknown
-										printer took a galley of type and scrambled it to make a
-										type specimen book. It has survived not only five centuries,
-										but also the leap into electronic typesetting, remaining
-										essentially unchanged.
-									</p>
-									<ul className="flex list-none mt-6">
-										<li className="py-2">
-											<div className="flex items-center">
-												<div>
-													<span
-														style={{ backgroundColor: "#7B6093" }}
-														className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-lightBlue-200 mr-3"
-													>
-														<i className="fas fa-fingerprint"></i>
-													</span>
-												</div>
-												<div>
-													<h4 className="text-md text-blueGray-500">
-														Peace building
-													</h4>
-												</div>
-											</div>
-										</li>
-										<li className="py-2">
-											<div className="flex items-center">
-												<div>
-													<span
-														style={{ backgroundColor: "#7B6093" }}
-														className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-lightBlue-200 mr-3"
-													>
-														<i className="fab fa-html5"></i>
-													</span>
-												</div>
-												<div>
-													<h4 className="text-blueGray-500 text-md">
-														Poverty Reduction
-													</h4>
-												</div>
-											</div>
-										</li>
-										<li className="py-2">
-											<div className="flex items-center">
-												<div>
-													<span
-														style={{ backgroundColor: "#7B6093" }}
-														className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-lightBlue-200 mr-3"
-													>
-														<i className="far fa-paper-plane"></i>
-													</span>
-												</div>
-												<div>
-													<h4 className="text-blueGray-500 text-md">
-														Community outreach
-													</h4>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+          <div className="container mx-auto px-4">
+            <div className="items-center flex flex-wrap">
+              <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+                <img
+                  alt="..."
+                  className="max-w-full rounded-lg shadow-lg"
+                  src={Community}
+                />
+              </div>
+              <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+                <div className="md:pr-12">
+                  <div
+                    className=" p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-lightBlue-300"
+                    style={{ backgroundColor: "#7B6093" }}
+                  >
+                    <i class="fas fa-universal-access"></i>
+                  </div>
+                  <h3 className="text-3xl font-semibold">Meet our hero</h3>
+                  <p className="mt-4 text-md leading-relaxed text-blueGray-500">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged.
+                  </p>
+                  <ul className="flex list-none mt-6">
+                    <li className="py-2">
+                      <div className="flex items-center">
+                        <div>
+                          <span
+                            style={{ backgroundColor: "#7B6093" }}
+                            className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-lightBlue-200 mr-3"
+                          >
+                            <i className="fas fa-fingerprint"></i>
+                          </span>
+                        </div>
+                        <div>
+                          <h4 className="text-md text-blueGray-500">Phone</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="py-2">
+                      <div className="flex items-center">
+                        <div>
+                          <span
+                            style={{ backgroundColor: "#7B6093" }}
+                            className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-lightBlue-200 mr-3"
+                          >
+                            <i className="fab fa-html5"></i>
+                          </span>
+                        </div>
+                        <div>
+                          <h4 className="text-blueGray-500 text-md">
+                            Poverty Reduction
+                          </h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="py-2">
+                      <div className="flex items-center">
+                        <div>
+                          <span
+                            style={{ backgroundColor: "#7B6093" }}
+                            className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-lightBlue-200 mr-3"
+                          >
+                            <i className="far fa-paper-plane"></i>
+                          </span>
+                        </div>
+                        <div>
+                          <h4 className="text-blueGray-500 text-md">
+                            Community outreach
+                          </h4>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 				{/* <section className="pt-20 pb-48">
           <div className="container mx-auto px-4">
