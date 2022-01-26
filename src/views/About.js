@@ -1,167 +1,291 @@
-import React from "react";
-function Index() {
-  return (
-    <div className="container mx-auto pt-16">
-      <div className="lg:flex">
-        <div className="xl:w-2/5 lg:w-2/5 bg-indigo-700 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
-          <div className="xl:w-5/6 xl:px-0 px-8 mx-auto">
-            <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold">
-              Get in touch
-            </h1>
-            <p className="text-xl text-white pb-8 leading-relaxed font-normal lg:pr-4">
-              Got a question about us? Are you interested in partnering with us?
-              Have some suggestions or just want to say Hi? Just contact us. We
-              are here to asset you.
-            </p>
-            <div className="flex pb-4 items-center">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="icon icon-tabler icon-tabler-phone-call"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="#ffffff"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" />
-                  <path d="M4 4h5l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v5a1 1 0 0 1 -1 1a16 16 0 0 1 -16 -16a1 1 0 0 1 1 -1" />
-                  <path d="M15 7a2 2 0 0 1 2 2" />
-                  <path d="M15 3a6 6 0 0 1 6 6" />
-                </svg>
-              </div>
-              <p className="pl-4 text-white text-base">+1 (308) 321 321</p>
-            </div>
-            <div className="flex items-center">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="icon icon-tabler icon-tabler-mail"
-                  width={20}
-                  height={20}
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="#FFFFFF"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" />
-                  <rect x={3} y={5} width={18} height={14} rx={2} />
-                  <polyline points="3 7 12 13 21 7" />
-                </svg>
-              </div>
-              <p className="pl-4 text-white text-base">Info@alphas.com</p>
-            </div>
-            <p className="text-lg text-white pt-10 tracking-wide">
-              545, Street 11, Block F <br />
-              Dean Boulevard, Ohio
-            </p>
-            <a href="javascript:void(0)">
-              <p className="text-white pt-16 font-bold tracking-wide underline">
-                View Job Openings
-              </p>
-            </a>
-          </div>
-        </div>
-        <div className="xl:w-3/5 lg:w-3/5 bg-gray-200 h-full pt-5 pb-5 xl:pr-5 xl:pl-0 rounded-tr rounded-br">
-          <form
-            id="contact"
-            className="bg-white py-4 px-8 rounded-tr rounded-br"
-          >
-            <h1 className="text-4xl text-gray-800 font-extrabold mb-6">
-              Enter Details
-            </h1>
-            <div className="block xl:flex w-full flex-wrap justify-between mb-6">
-              <div className="w-2/4 max-w-xs mb-6 xl:mb-0">
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="full_name"
-                    className="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2"
-                  >
-                    Full Name
-                  </label>
-                  <input
-                    required
-                    id="full_name"
-                    name="full_name"
-                    type="text"
-                    className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
-                    placeholder
-                  />
-                </div>
-              </div>
-              <div className="w-2/4 max-w-xs xl:flex xl:justify-end">
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="email"
-                    className="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2"
-                  >
-                    Email
-                  </label>
-                  <input
-                    required
-                    id="email"
-                    name="email"
-                    type="email"
-                    className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
-                    placeholder
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="flex w-full flex-wrap">
-              <div className="w-2/4 max-w-xs">
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="phone"
-                    className="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2"
-                  >
-                    Phone
-                  </label>
-                  <input
-                    required
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
-                    placeholder
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="w-full mt-6">
-              <div className="flex flex-col">
-                <label
-                  className="text-sm font-semibold text-gray-800 mb-2"
-                  htmlFor="message"
-                >
-                  Message
-                </label>
-                <textarea
-                  placeholder
-                  name="message"
-                  className="border-gray-300 border mb-4 rounded py-2 text-sm outline-none resize-none px-3 focus:border focus:border-indigo-700"
-                  rows={8}
-                  id="message"
-                  defaultValue={""}
-                />
-              </div>
-              <button
-                type="submit"
-                className="focus:outline-none bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-3 text-sm leading-6"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  );
-}
+import Navbar from "components/Navbars/AuthNavbar.js";
+import Footer from "components/Footers/Footer.js";
+import about from "assets/img/about.jpeg";
+import Team from "assets/img/team.jpg";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import img1 from "assets/img/CEI_6002.jpg";
+import img2 from "assets/img/CEI_6005.jpg";
+import img3 from "assets/img/CEI_6007.jpg";
+import img4 from "assets/img/CEI_6011.jpg";
+export default function About() {
+	const responsive = {
+		superLargeDesktop: {
+			// the naming can be any, depends on you.
+			breakpoint: { max: 4000, min: 3000 },
+			items: 5,
+		},
+		desktop: {
+			breakpoint: { max: 3000, min: 1024 },
+			items: 3,
+		},
+		tablet: {
+			breakpoint: { max: 1024, min: 464 },
+			items: 2,
+		},
+		mobile: {
+			breakpoint: { max: 464, min: 0 },
+			items: 1,
+		},
+	};
+	return (
+		<>
+			<Navbar transparent />
+			<main className="profile-page">
+				<section className="relative block h-500-px">
+					<div
+						className="absolute top-0 w-full h-full bg-center bg-cover"
+						style={{
+							backgroundImage: `url(${Team})`,
+							backgroundPosition: "75% 35%",
+						}}
+					>
+						<span
+							id="blackOverlay"
+							className="w-full h-full absolute opacity-50 bg-black"
+						></span>
+					</div>
+					<div
+						className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
+						style={{ transform: "translateZ(0)" }}
+					>
+						<svg
+							className="absolute bottom-0 overflow-hidden"
+							xmlns="http://www.w3.org/2000/svg"
+							preserveAspectRatio="none"
+							version="1.1"
+							viewBox="0 0 2560 100"
+							x="0"
+							y="0"
+						>
+							<polygon
+								className="text-blueGray-200 fill-current"
+								points="2560 0 2560 100 0 100"
+							></polygon>
+						</svg>
+					</div>
+				</section>
+				<section className="relative py-40 bg-blueGray-200">
+					<div className="container mx-auto px-4">
+						<div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+							<div className="px-6">
+								<div className="text-center mt-4">
+									<h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700">
+										Rabagirana Ministries
+									</h3>
+								</div>
+								<div className="mt-10 py-10 border-t border-blueGray-200 text-center">
+									<div className="flex flex-wrap justify-center">
+										<div className="w-full lg:w-10/12">
+											<div className="py-20 2xl:px-0 lg:px-12 px-4 2xl:mx-auto 2xl:container bg-gray-50">
+												<div className="items-center justify-between w-full bg-gray-50">
+													<div className="">
+														<h1
+															role="heading"
+															className="focus:outline-none font-bold md:text-6xl text-4xl leading-tight text-gray-800"
+														>
+															<span className="font-normal italic">
+																{" "}
+																Souls Can Shine As Bright As Stars{" "}
+															</span>
+														</h1>
+														<p
+															role="contentinfo"
+															className="focus:outline-none text-base leading-6 mt-8 text-gray-600 mx-10"
+														>
+															There is no readily available road map to
+															reconciliation. There is no quick fix or simple
+															prescription for healing the wounds and divisions
+															of a society in the aftermath of sustained
+															violence. Developing trust and understanding
+															between former adversaries is an exceedingly tough
+															task. It is, however, one that must be addressed
+															as part of the process of establishing a lasting
+															peace. Examining the painful past, acknowledging
+															and understanding it, and, most importantly,
+															transcending it together, is the only way to
+															ensure that it does not – and cannot – happen
+															again!
+														</p>
+														<div className="mt-10 mx-10">
+															<button className="flex items-center md:p-3 p-1 focus:outline-none text-xl font-medium leading-5 text-gray-800 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">
+																View Programs
+																<svg
+																	className="ml-8"
+																	width={45}
+																	height={40}
+																	viewBox="0 0 45 40"
+																	fill="none"
+																	xmlns="http://www.w3.org/2000/svg"
+																>
+																	<path
+																		d="M11.2113 33.7887C11.0161 33.9839 11.0157 34.3009 11.2157 34.4911C13.956 37.0978 17.3821 38.8765 21.0982 39.6157C24.9778 40.3874 28.9991 39.9913 32.6537 38.4776C36.3082 36.9638 39.4318 34.4004 41.6294 31.1114C43.827 27.8224 45 23.9556 45 20C45 16.0444 43.827 12.1776 41.6294 8.8886C39.4318 5.59961 36.3082 3.03616 32.6537 1.52241C28.9991 0.00865715 24.9778 -0.38741 21.0982 0.384294C17.3821 1.12346 13.956 2.90221 11.2157 5.50886C11.0157 5.69911 11.0161 6.01609 11.2113 6.21127C11.4065 6.40645 11.7225 6.4059 11.9227 6.21592C14.523 3.74892 17.7711 2.06527 21.2932 1.36468C24.9789 0.631541 28.7993 1.00781 32.2711 2.44591C35.743 3.88401 38.7105 6.31934 40.7983 9.44394C42.8861 12.5685 44.0004 16.2421 44.0004 20C44.0004 23.7579 42.8861 27.4315 40.7983 30.5561C38.7105 33.6807 35.743 36.116 32.2711 37.5541C28.7993 38.9922 24.9789 39.3685 21.2932 38.6353C17.7711 37.9347 14.523 36.2511 11.9227 33.7841C11.7225 33.5941 11.4065 33.5935 11.2113 33.7887Z"
+																		fill="#1F2937"
+																	/>
+																	<path
+																		d="M1 20H29"
+																		stroke="#1F2937"
+																		strokeLinecap="round"
+																		strokeLinejoin="round"
+																	/>
+																	<path
+																		d="M21 28L29 20"
+																		stroke="#1F2937"
+																		strokeLinecap="round"
+																		strokeLinejoin="round"
+																	/>
+																	<path
+																		d="M21 12L29 20"
+																		stroke="#1F2937"
+																		strokeLinecap="round"
+																		strokeLinejoin="round"
+																	/>
+																</svg>
+															</button>
+														</div>
+													</div>
+													<div className="w-full">
+														<h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700">
+															Our Vision
+														</h3>
+														<div className="w-full flex mt-8">
+															<p
+																role="contentinfo"
+																className=" focus:outline-none text-base leading-6 mb-8 text-gray-600 md:mt-0 mt-10 mx-10 w-1/2"
+															>
+																In Rwanda we have come a long way down the road
+																of reconciliation, but our journey is far from
+																complete. Reconciliation is a long-term process
+																and it must – and will – continue for many years
+																to come. Nevertheless, we have made a good
+																start. For us, reconciliation is centered on
+																truth: the need to learn the truth about the
+																atrocities of the past in order to prevent them
+																from occurring again. That, in essence, is the
+																purpose of reconciliation. Without it, people
+																have no sense of safety, no trust, no confidence
+																in the future. The aim must be to 'create a
+																common future out of a divided past’ as we shall
+																see from the story of Eliya and Gaston
+															</p>
+															<div className="w-1/2">
+																<img
+																	src={about}
+																	width={200}
+																	alt="Purple flowers on a book"
+																	className="w-full"
+																/>
+																{/* <div className="flex items-center mt-8">
+                                <p
+                                  role="contentinfo"
+                                  className="text-xl focus:outline-none font-semibold leading-5 text-gray-700"
+                                >
+                                  Picture description
+                                </p>
+                                <p
+                                  role="contentinfo"
+                                  className="text-xl focus:outline-none italic font-italic leading-5 pl-2 text-gray-700"
+                                >
+                                  Specification
+                                </p>
+                              </div> */}
+															</div>
+														</div>
+													</div>
 
-export default Index;
+													<div className="w-full">
+														<h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mt-4">
+															Our Mission
+														</h3>
+														<div className="w-full flex mt-8">
+															<div className="w-1/2">
+																<img
+																	src={about}
+																	width={200}
+																	alt="Purple flowers on a book"
+																	className="w-full"
+																/>
+																{/* <div className="flex items-center mt-8">
+                                <p
+                                  role="contentinfo"
+                                  className="text-xl focus:outline-none font-semibold leading-5 text-gray-700"
+                                >
+                                  Picture description
+                                </p>
+                                <p
+                                  role="contentinfo"
+                                  className="text-xl focus:outline-none italic font-italic leading-5 pl-2 text-gray-700"
+                                >
+                                  Specification
+                                </p>
+                              </div> */}
+															</div>
+															<p
+																role="contentinfo"
+																className=" focus:outline-none text-base leading-6 mb-8 text-gray-600 md:mt-0 mt-10 mx-10 w-1/2"
+															>
+																In Rwanda we have come a long way down the road
+																of reconciliation, but our journey is far from
+																complete. Reconciliation is a long-term process
+																and it must – and will – continue for many years
+																to come. Nevertheless, we have made a good
+																start. For us, reconciliation is centered on
+																truth: the need to learn the truth about the
+																atrocities of the past in order to prevent them
+																from occurring again. That, in essence, is the
+																purpose of reconciliation. Without it, people
+																have no sense of safety, no trust, no confidence
+																in the future. The aim must be to 'create a
+																common future out of a divided past’ as we shall
+																see from the story of Eliya and Gaston
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<h2 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mt-4">
+											Meet Our Team
+										</h2>
+									</div>
+									<Carousel
+										responsive={responsive}
+										className="w-full px-4 text-center"
+									>
+										<div className="relative flex flex-col min-w-0 break-words bg-white mb-8 shadow-lg rounded-lg mx-4">
+											<div className=" px-4 py-5 flex-auto">
+												<img src={img1} alt="" />
+												<h6 className="text-xl font-semibold">Director</h6>
+											</div>
+										</div>
+										<div className="relative flex flex-col min-w-0 break-words bg-white mb-8 shadow-lg rounded-lg mx-4">
+											<div className="px-4 py-5 flex-auto">
+												<img src={img2} alt="" />
+												<h6 className="text-xl font-semibold">Administrator</h6>
+											</div>
+										</div>
+										<div className="relative flex flex-col min-w-0 break-words bg-white mb-8 shadow-lg rounded-lg mx-4">
+											<div className="px-4 py-5 flex-auto">
+												<img src={img3} alt="" />
+												<h6 className="text-xl font-semibold">Coordicator</h6>
+											</div>
+										</div>
+										<div className="relative flex flex-col min-w-0 break-words bg-white mb-8 shadow-lg rounded-lg mx-4">
+											<div className="px-4 py-5 flex-auto">
+												<img src={img4} alt="" />
+												<h6 className="text-xl font-semibold">Manager</h6>
+											</div>
+										</div>
+									</Carousel>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<Footer />
+		</>
+	);
+}
