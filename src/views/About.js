@@ -2,7 +2,7 @@ import { Carousel } from "react-carousel-minimal";
 
 import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
-import About from "assets/img/about.jpeg";
+import about from "assets/img/about.jpeg";
 import Team from "assets/img/team.jpg";
 import "react-multi-carousel/lib/styles.css";
 
@@ -149,7 +149,7 @@ export default function About() {
 															</p>
 															<div className="w-1/2">
 																<img
-																	src={About}
+																	src={about}
 																	width={200}
 																	alt="Purple flowers on a book"
 																	className="w-full"
@@ -179,7 +179,7 @@ export default function About() {
 														<div className="w-full flex mt-8">
 															<div className="w-1/2">
 																<img
-																	src={About}
+																	src={about}
 																	width={200}
 																	alt="Purple flowers on a book"
 																	className="w-full"
