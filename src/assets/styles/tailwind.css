@@ -518,7 +518,7 @@ video {
 [type="time"],
 [type="week"],
 [multiple],
-textarea,
+textarea{
   max-width: 100%;
   height: auto;
 }
@@ -1434,9 +1434,9 @@ select {
 .rounded-sm {
 	border-radius: 0.125rem;
 
-.focus\:border-indigo-700:focus {
+/* .focus\:border-indigo-700:focus {
   --tw-border-opacity: 1;
-  border-color: rgba(67, 56, 202, var(--tw-border-opacity));
+  border-color: rgba(67, 56, 202, var(--tw-border-opacity)); */
 
 }
 
