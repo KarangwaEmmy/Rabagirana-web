@@ -15,6 +15,7 @@
     "flat-carousel": "^0.0.1",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
+    "history": "^5.2.0",
     "i": "^0.3.7",
     "npm": "^8.3.1",
     "postcss": "8.2.8",

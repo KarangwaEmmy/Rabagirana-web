@@ -1,6 +1,7 @@
 /*eslint-disable*/
 import React from "react";
 import { Link } from "react-router-dom";
+import { createBrowserHistory } from "history";
 
 // components
 
@@ -8,6 +9,9 @@ import PagesDropdown from "components/Dropdowns/PagesDropdown.js";
 import Logo from "assets/img/logo.png";
 
 export default function Navbar(props) {
+  const history = createBrowserHistory();
+  const router = history.location.pathname;
+  console.log(router);
   const [ShowContactModal, setShowContactModal] = React.useState(false);
   const [ShowDonateModal, setShowDonateModal] = React.useState(false);
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -37,17 +41,6 @@ export default function Navbar(props) {
             }
             id="example-navbar-warning"
           >
-            {/* <ul className="flex flex-col lg:flex-row list-none mr-auto">
-              <li className="flex items-center">
-                <a
-                  className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="#"
-                >
-                  <i className="lg:text-blueGray-200 text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2" />{" "}
-                  Docs
-                </a>
-              </li>
-            </ul> */}
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="flex items-center">
                 <a
@@ -57,6 +50,17 @@ export default function Navbar(props) {
                   Home
                 </a>
               </li>
+              {/* <li>
+                <Link href="/">
+                  <a
+                    className={`mr-4 my-auto hover:text-indigo-600 font-normal font-serif text-xl ${
+                      router == "/" ? "text-indigo-600" : "text-brand-darkblue"
+                    }`}
+                  >
+                    Home
+                  </a>
+                </Link>
+              </li> */}
               <li className="flex items-center">
                 <PagesDropdown />
               </li>
@@ -180,14 +184,14 @@ export default function Navbar(props) {
                 ) : null}
               </li>
               <li className="flex items-center">
-                <button
+                <a
                   className="active:text-yellow-400 text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                  type="button"
+                  href="/donate"
                   style={{ backgroundColor: "#FBB821" }}
-                  onClick={() => setShowDonateModal(true)}
+                  // onClick={() => setShowDonateModal(true)}
                 >
                   Donate
-                </button>
+                </a>
                 {ShowDonateModal ? (
                   <>
                     <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">

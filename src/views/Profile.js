@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Navbar from "components/Navbars/AuthNavbar.js";
-import Footer from "components/Footers/Footer.js";
+import Footer from "components/Footers/MainFooter.js";
 
 export default function Profile() {
+  const [showpass, setShowPass] = useState(false);
   return (
     <>
       <Navbar transparent />
@@ -43,18 +44,78 @@ export default function Profile() {
         </section>
         <section className="relative py-16 bg-blueGray-200">
           <div className="container mx-auto px-4">
-            <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+            <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-md -mt-64">
               <div className="px-6">
-                <div className="text-center mt-4">
-                  <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700">
-                    Stories of impact
-                  </h3>
-                </div>
-                <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
-                  <div className="flex flex-wrap justify-center">
-                    <div className="w-full lg:w-9/12 px-4"></div>
+                <section className="p-4 lg:p-8 dark:bg-coolGray-800 dark:text-coolGray-100">
+                  <div className="container mx-auto space-y-12">
+                    <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
+                      <img
+                        src="https://source.unsplash.com/640x480/?1"
+                        alt=""
+                        className="h-80 dark:bg-coolGray-500 aspect-video"
+                      />
+                      <div className="flex flex-col justify-center flex-1 p-6 dark:bg-coolGray-900">
+                        <span className="text-xs uppercase dark:text-coolGray-400">
+                          Join, it's free
+                        </span>
+                        <h3 className="text-3xl font-bold">
+                          We're not reinventing the wheel
+                        </h3>
+                        <p className="my-6 dark:text-coolGray-400">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Dolor aliquam possimus quas, error esse quos.
+                        </p>
+                        <button type="button" className="self-start">
+                          Action
+                        </button>
+                      </div>
+                    </div>
+                    <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
+                      <img
+                        src="https://source.unsplash.com/640x480/?2"
+                        alt=""
+                        className="h-80 dark:bg-coolGray-500 aspect-video"
+                      />
+                      <div className="flex flex-col justify-center flex-1 p-6 dark:bg-coolGray-900">
+                        <span className="text-xs uppercase dark:text-coolGray-400">
+                          Join, it's free
+                        </span>
+                        <h3 className="text-3xl font-bold">
+                          We're not reinventing the wheel
+                        </h3>
+                        <p className="my-6 dark:text-coolGray-400">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Dolor aliquam possimus quas, error esse quos.
+                        </p>
+                        <button type="button" className="self-start">
+                          Action
+                        </button>
+                      </div>
+                    </div>
+                    <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
+                      <img
+                        src="https://source.unsplash.com/640x480/?3"
+                        alt=""
+                        className="h-80 dark:bg-coolGray-500 aspect-video"
+                      />
+                      <div className="flex flex-col justify-center flex-1 p-6 dark:bg-coolGray-900">
+                        <span className="text-xs uppercase dark:text-coolGray-400">
+                          Join, it's free
+                        </span>
+                        <h3 className="text-3xl font-bold">
+                          We're not reinventing the wheel
+                        </h3>
+                        <p className="my-6 dark:text-coolGray-400">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Dolor aliquam possimus quas, error esse quos.
+                        </p>
+                        <button type="button" className="self-start">
+                          Action
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </section>
               </div>
             </div>
           </div>

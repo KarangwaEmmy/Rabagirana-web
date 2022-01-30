@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { createBrowserHistory } from "history";
 
 // components
 
 import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
-import Bg from "assets/img/background.jpg";
 import vacation from "assets/img/vacation.jpg";
 import Community from "assets/img/CEI_5975.jpg";
 import Carousel from "../components/Carousel/index";
-import User from "assets/img/user.png";
 
-export default function Landing() {
+export default function Landing(props) {
+  const history = createBrowserHistory();
+  const router = history.location.pathname;
   return (
     <>
       <Navbar transparent />
