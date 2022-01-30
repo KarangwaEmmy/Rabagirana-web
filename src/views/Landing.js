@@ -12,34 +12,33 @@ import Carousel from "../components/Carousel/index";
 import User from "assets/img/user.png";
 
 export default function Landing() {
-  return (
-    <>
-      <Navbar transparent />
-      <Carousel />
-      <main>
-        <div className="relative  flex content-center items-center justify-center min-h-screen-75">
-          <div
-            className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
-            style={{ transform: "translateZ(0)" }}
-          >
-            <svg
-              className="absolute bottom-0 overflow-hidden"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon
-                className="text-blueGray-200 fill-current"
-                points="2560 0 2560 100 0 100"
-              ></polygon>
-            </svg>
-          </div>
-        </div>
-
-        <section className="pb-20 bg-blueGray-200 -mt-24">
+	return (
+		<>
+			<Navbar transparent />
+			<Carousel />
+			<main>
+				<div className="relative  flex content-center items-center justify-center min-h-screen-75">
+					<div
+						className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
+						style={{ transform: "translateZ(0)" }}
+					>
+						<svg
+							className="absolute bottom-0 overflow-hidden"
+							xmlns="http://www.w3.org/2000/svg"
+							preserveAspectRatio="none"
+							version="1.1"
+							viewBox="0 0 2560 100"
+							x="0"
+							y="0"
+						>
+							<polygon
+								className="text-blueGray-200 fill-current"
+								points="2560 0 2560 100 0 100"
+							></polygon>
+						</svg>
+					</div>
+				</div>
+        <section className=" bg-blueGray-200 -mt-24">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap">
               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -49,10 +48,49 @@ export default function Landing() {
                       className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
                       style={{ backgroundColor: "#3b7949" }}
                     >
+                      <i className="fa fa-book"></i>
+                    </div>
+
+                    <h6 className="text-xl font-semibold">Stories of impact</h6>
+                    <p className="mt-2 mb-4 text-blueGray-500">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full md:w-4/12 px-4 text-center">
+                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                  <iframe
+                    className="rounded-lg"
+                    src={`https://www.youtube.com/watch?v=azZNPXsVnfM`}
+                    frameBorder="0"
+                    width="403"
+                    height="380"
+                    borderRadius="10px"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title="Embedded youtube"
+                  />
+                </div>
+              </div>
+
+              <div className="pt-6 w-full md:w-4/12 px-4 text-center">
+                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                  <div className="px-4 py-5 flex-auto">
+                    <div
+                      className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
+                      style={{ backgroundColor: "#7B6093" }}
+                    >
                       <i className="fas fa-calendar  "></i>
                     </div>
                     <h6 className="text-xl font-semibold">Upcomig events</h6>
-
                     <div class="container flex flex-col mx-auto w-full items-center justify-center">
                       <ul class="flex flex-col w-full">
                         <li class="border-gray-400 flex flex-row mb-2">
@@ -127,110 +165,69 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-
-              <div className="w-full md:w-4/12 px-4 text-center">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-                  <div className="px-4 py-5 flex-auto">
-                    <div
-                      className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full "
-                      style={{ backgroundColor: "#7B6093" }}
-                    >
-                      <i className="fas fa-archive"></i>
-                    </div>
-                    <h6 className="text-xl font-semibold">Stories of impact</h6>
-                    <p className="mt-2 mb-4 text-blueGray-500">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-6 w-full md:w-4/12 px-4 text-center">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-                  <iframe
-                    className="rounded-lg"
-                    src={`https://www.youtube.com/embed/rokGy0huYEA`}
-                    frameBorder="0"
-                    width="403"
-                    height="380"
-                    borderRadius="10px"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title="Embedded youtube"
-                  />
-                </div>
-              </div>
             </div>
-
-            <div className="flex flex-wrap items-center mt-32">
-              <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-                {/* <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
+						<div className="flex flex-wrap items-center mt-32">
+							<div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+								{/* <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                   <i className="fas fa-user-friends text-xl"></i>
                 </div> */}
-                <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                  Fresh manner
-                </h3>
-                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-800">
-                  There is no readily available road map to reconciliation.
-                  There is no quick fix or simple prescription for healing the
-                  wounds and divisions of a society in the aftermath of
-                  sustained violence. Developing trust and understanding between
-                  former adversaries is an exceedingly tough task. It is,
-                  however, one that must be addressed as part of the process of
-                  establishing a lasting peace. Examining the painful past,
-                  acknowledging and understanding it, and, most importantly,
-                  transcending it together, is the only way to ensure that it
-                  does not – and cannot – happen again!
-                </p>
-                <Link
-                  to="/programs/community"
-                  className="font-bold text-blueGray-700 mt-8"
-                >
-                  READ MORE...
-                </Link>
-              </div>
+								<h3 className="text-3xl mb-2 font-semibold leading-normal">
+									Fresh manner
+								</h3>
+								<p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-800">
+									There is no readily available road map to reconciliation.
+									There is no quick fix or simple prescription for healing the
+									wounds and divisions of a society in the aftermath of
+									sustained violence. Developing trust and understanding between
+									former adversaries is an exceedingly tough task. It is,
+									however, one that must be addressed as part of the process of
+									establishing a lasting peace. Examining the painful past,
+									acknowledging and understanding it, and, most importantly,
+									transcending it together, is the only way to ensure that it
+									does not – and cannot – happen again!
+								</p>
+								<Link
+									to="/programs/community"
+									className="font-bold text-blueGray-700 mt-8"
+								>
+									READ MORE...
+								</Link>
+							</div>
 
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                <div className="relative flex flex-col min-w-0 break-words w-full  shadow-lg rounded-full">
-                  <img
-                    alt="..."
-                    style={{ height: "380px" }}
-                    src={vacation}
-                    className="w-full align-middle rounded-lg"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+							<div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
+								<div className="relative flex flex-col min-w-0 break-words w-full  shadow-lg rounded-full">
+									<img
+										alt="..."
+										style={{ height: "380px" }}
+										src={vacation}
+										className="w-full align-middle rounded-lg"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-        <section className="relative py-20">
-          <div
-            className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
-            style={{ transform: "translateZ(0)" }}
-          >
-            <svg
-              className="absolute bottom-0 overflow-hidden"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon
-                className="text-white fill-current"
-                points="2560 0 2560 100 0 100"
-              ></polygon>
-            </svg>
-          </div>
-
+				<section className="relative py-20">
+					<div
+						className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+						style={{ transform: "translateZ(0)" }}
+					>
+						<svg
+							className="absolute bottom-0 overflow-hidden"
+							xmlns="http://www.w3.org/2000/svg"
+							preserveAspectRatio="none"
+							version="1.1"
+							viewBox="0 0 2560 100"
+							x="0"
+							y="0"
+						>
+							<polygon
+								className="text-white fill-current"
+								points="2560 0 2560 100 0 100"
+							></polygon>
+						</svg>
+					</div>
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
               <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
@@ -270,9 +267,7 @@ export default function Landing() {
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-md text-blueGray-500">
-                            Peace building
-                          </h4>
+                          <h4 className="text-md text-blueGray-500">Phone</h4>
                         </div>
                       </div>
                     </li>
@@ -317,7 +312,7 @@ export default function Landing() {
           </div>
         </section>
 
-        {/* <section className="pt-20 pb-48">
+				{/* <section className="pt-20 pb-48">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
@@ -474,7 +469,7 @@ export default function Landing() {
           </div>
         </section> */}
 
-        {/* <section className="pb-20 relative block bg-blueGray-800">
+				{/* <section className="pb-20 relative block bg-blueGray-800">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
             style={{ transform: "translateZ(0)" }}
@@ -545,7 +540,7 @@ export default function Landing() {
             </div>
           </div>
         </section> */}
-        {/* <section className="relative block py-24 lg:pt-0 bg-blueGray-800">
+				{/* <section className="relative block py-24 lg:pt-0 bg-blueGray-800">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
               <div className="w-full lg:w-6/12 px-4">
@@ -613,8 +608,8 @@ export default function Landing() {
             </div>
           </div>
         </section> */}
-      </main>
-      <Footer />
-    </>
-  );
+			</main>
+			<Footer />
+		</>
+	);
 }
