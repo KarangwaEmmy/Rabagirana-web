@@ -22,6 +22,9 @@ import Profile from "views/donatee";
 import About from "views/About";
 import Stories from "views/Stories";
 import Donate from "views/Donate";
+import StoryOne from "views/Story_impact_1";
+import StoryTwo from "views/Story_impact_2";
+import StoryThree from "views/Story_impact_3";
 // Programs routes
 import ReconsProgram from "views/ReconsProgram";
 import LeadershipProgram from "views/LeadershipProgram";
@@ -39,6 +42,9 @@ ReactDOM.render(
       <Route path="/programs/peacebuilding" component={LeadershipProgram} />
       <Route path="/donate" exact component={Donate} />
       <Route path="/stories" component={Stories} />
+      <Route path="/stories/storyone" exact component={StoryOne} />
+      <Route path="/stories/storytwo" exact component={StoryTwo} />
+      <Route path="/stories/storythree" exact component={StoryThree} />
       <Route path="/profile" exact component={Profile} />
       <Route path="/" exact component={Landing} />
       <Route path="/carousel" exact component={Carousel} />

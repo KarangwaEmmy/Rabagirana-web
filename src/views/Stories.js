@@ -82,7 +82,7 @@ export default function Profile() {
                           anymore.
                         </p>
                         <a
-                          href="/stories"
+                          href="/stories/storyone"
                           style={{ backgroundColor: "#7B6093" }}
                           class="inline-flex items-center justify-center w-1/4 px-5 py-3 text-white rounded-full"
                         >
@@ -129,7 +129,7 @@ export default function Profile() {
                           average day, I now earn up to 20,000 francs (25$).
                         </p>
                         <a
-                          href="/stories/story_2"
+                          href="/stories/storytwo"
                           style={{ backgroundColor: "#7B6093" }}
                           class="inline-flex items-center justify-center w-1/2 px-5 py-3 text-white rounded-full sm:w-auto"
                         >
@@ -175,7 +175,7 @@ export default function Profile() {
                           was the party behind that.
                         </p>
                         <a
-                          href="/stories/story_2"
+                          href="/stories/storythree"
                           style={{ backgroundColor: "#7B6093" }}
                           class="inline-flex items-center justify-center w-1/2 px-5 py-3 text-white rounded-full sm:w-auto"
                         >

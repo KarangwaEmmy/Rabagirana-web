@@ -100,60 +100,51 @@ export default function Profile() {
                               className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-400"
                             >
                               <p className="font-sans text-xl font-extrabold leading-none tracking-tight lg:text-1xl">
-                                FROM FIREWOOD TO GAS…
+                                THE HEALING SALON…
                               </p>
                             </a>
                           </div>
                           <p className="mb-4 text-base text-gray-700 md:text-lg">
-                            The month was July, the day was a Saturday, and the
-                            time was half-past midday. A joyous Keza Angelique,
-                            a single mother of three, is humming to a hymn from
-                            the radio as she warms ‘isombe’ (cassava leaves) for
-                            lunch, using her newly purchased gas cooker. With a
-                            green colorful ‘kitenge’ (wrapper) around her waist
-                            and a bandana of the same color covering her head,
-                            she turns to us and asks, “do you want to know the
-                            secret ingredient to my tasty isombe?” “Love!” my
-                            colleague immediately yelled. “No. Love doesn’t make
-                            my isombe sweet. What’s wrong with you?” She replied
-                            playfully, making us all burst into laughter. After
-                            she was done warming the isombe, she got ready to
-                            prepare ‘ugali’ (sorghum flour). She sprinkled the
-                            flour into the boiling water while briskly stirring
-                            it with a cooking stick to make it thicker. In a
-                            very short time, the ugali was ready and it was time
-                            to eat. As we sat by the dining table to devour the
-                            tasty meal that lay helplessly before us, Keza
-                            signaled that she wanted to say something. My
-                            colleague and I immediately had one of those
-                            telepathic communications, questioning Keza’s poor
-                            timing. “One doesn’t give speeches before the
-                            meal…speeches usually take place after the meal!" he
-                            seemed to say. "Her house, her rules I guess," I
-                            signaled back. So, we sat quietly and listened to
-                            her.
+                            Meet Mukeshimana Claudine; she is a wife, a mother
+                            of four, a hairdresser, and of recent, a healing and
+                            reconciliation practitioner! Rabagirana Ministries
+                            (RM) got to know about Claudine a few months ago
+                            when she enrolled for our annual Vocational training
+                            school. Before taking the hairdressing class,
+                            Claudine narrates how miserable life was; "I was
+                            unemployed for as long as I can remember" she
+                            begins. "My husband and I used to struggle daily to
+                            provide for our kids their basic needs. It was a
+                            very tough time. This however, is now all in the
+                            past!" she concludes with a smile.
                           </p>
                           <div className="flex items-center font-serif">
-                            “Thank you, Rabagirana Ministries for the gas
-                            cooker. Cooking over the traditional three-stone
-                            open fire was a health hazard to me. It used to make
-                            me cough a lot and the smoke would hurt my eyes
-                            too... giving me teary eyes with a running nose. But
-                            this gas produces no smoke and since I started using
-                            it, I do not cough anymore.”
+                            After her completion of the course, Claudine didn't
+                            take long before she landed her first job. She now
+                            works at Magic Salon, which is also known by the
+                            locals as the "healing salon." The nickname "healing
+                            salon" came from the fact that people actually felt
+                            better after spending time in that salon and
+                            Claudine was the party behind that. After going
+                            through the healing and reconciliation workshop,
+                            Claudine recalls experiencing a deep healing of all
+                            her wounds and she vowed to use whatever platform
+                            God was going to give her to share her experience.
+                            So, when the opportunity presented itself, she took
+                            it. She would offer compassionate hearing to her
+                            clients and allow them to share their hurts and
+                            release their tears. Many women, old and young
+                            alike, have now received the healing message, and
+                            for majority of them, it changed their outlook on
+                            life.
                           </div>
                         </div>
 
                         <div className="flex items-center">
-                          Keza is one of many community members positively
-                          impacted by the creation care program of Rabagirana
-                          Ministries. Earlier last month we partnered with some
-                          local cooperatives to purchase gas cookers, and build
-                          wood-saving, earth-block stoves popularly known as the
-                          energy-saving stoves for the members of the community.
-                          As compared to the widely used traditional three-stone
-                          open hearth, these alternatives are already
-                          transforming the way people cook in rural communities
+                          It is now very clear that most Rwandans are not asking
+                          if healing is possible but where can they find it? We
+                          want to encourage every church, school, business, and
+                          even homes to be used as a 'healing space!'
                         </div>
                       </div>
                     </div>

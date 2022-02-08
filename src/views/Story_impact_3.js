@@ -105,55 +105,58 @@ export default function Profile() {
                             </a>
                           </div>
                           <p className="mb-4 text-base text-gray-700 md:text-lg">
-                            The month was July, the day was a Saturday, and the
-                            time was half-past midday. A joyous Keza Angelique,
-                            a single mother of three, is humming to a hymn from
-                            the radio as she warms ‘isombe’ (cassava leaves) for
-                            lunch, using her newly purchased gas cooker. With a
-                            green colorful ‘kitenge’ (wrapper) around her waist
-                            and a bandana of the same color covering her head,
-                            she turns to us and asks, “do you want to know the
-                            secret ingredient to my tasty isombe?” “Love!” my
-                            colleague immediately yelled. “No. Love doesn’t make
-                            my isombe sweet. What’s wrong with you?” She replied
-                            playfully, making us all burst into laughter. After
-                            she was done warming the isombe, she got ready to
-                            prepare ‘ugali’ (sorghum flour). She sprinkled the
-                            flour into the boiling water while briskly stirring
-                            it with a cooking stick to make it thicker. In a
-                            very short time, the ugali was ready and it was time
-                            to eat. As we sat by the dining table to devour the
-                            tasty meal that lay helplessly before us, Keza
-                            signaled that she wanted to say something. My
-                            colleague and I immediately had one of those
-                            telepathic communications, questioning Keza’s poor
-                            timing. “One doesn’t give speeches before the
-                            meal…speeches usually take place after the meal!" he
-                            seemed to say. "Her house, her rules I guess," I
-                            signaled back. So, we sat quietly and listened to
-                            her.
+                            Emmanuel Ntirushwamaboko is just one in a million of
+                            people who was negatively impacted by the pandemic.
+                            He lost his livelihood, which was to carry goods and
+                            people on a borrowed bicycle once the lockdown was
+                            effected
                           </p>
                           <div className="flex items-center font-serif">
-                            “Thank you, Rabagirana Ministries for the gas
-                            cooker. Cooking over the traditional three-stone
-                            open fire was a health hazard to me. It used to make
-                            me cough a lot and the smoke would hurt my eyes
-                            too... giving me teary eyes with a running nose. But
-                            this gas produces no smoke and since I started using
-                            it, I do not cough anymore.”
+                            For the first time in my life, I didn’t know how I
+                            was going to feed my wife and two kids. We were just
+                            a week in to the lockdown, and all that I had set
+                            aside was gone. Sometimes, either my wife or I would
+                            go through a forced fast just to make sure there is
+                            food for the kids.” The emotional Emmanuel recalls.
+                            It was still in this state of despair that Emmanuel
+                            received a call from the local authorities
+                            requesting him to go and pick food supplies from
+                            Rabagirana Ministries. Attached to the supplies
+                            provided, was some money that they were free to use
+                            to meet other critical needs. Emmanuel decided to
+                            use this money to start a business. The business
+                            idea he came up with was to make shopping bags.
+                            Since his wife already had a previous training in
+                            tailoring, he used the money to rent a refurbished
+                            sewing machine, and his wife taught him the basics
+                            of tailoring. It took him almost a month, but he
+                            eventually mastered the skill. <br />
+                            Emmanuel made his first dozen of shopping bags
+                            around mid-May. With the lockdown partly lifted, he
+                            managed to take them to the market, and in less than
+                            a few hours, they were all gone. “I honestly
+                            couldn’t believe it.” He remarked. “That day, after
+                            a long time we had fish for supper!” said a very
+                            jolly Emmanuel. He now makes up to 200 shopping bags
+                            per day. “In an average day, I now earn up to 20,000
+                            francs (25$). That is the amount I used to make in a
+                            month!” With his new found success, Emmanuel was
+                            able move his family from a single bedroomed house
+                            to a three bedroomed house. Now one of the rooms
+                            functions as his place of work
                           </div>
                         </div>
 
                         <div className="flex items-center">
-                          Keza is one of many community members positively
-                          impacted by the creation care program of Rabagirana
-                          Ministries. Earlier last month we partnered with some
-                          local cooperatives to purchase gas cookers, and build
-                          wood-saving, earth-block stoves popularly known as the
-                          energy-saving stoves for the members of the community.
-                          As compared to the widely used traditional three-stone
-                          open hearth, these alternatives are already
-                          transforming the way people cook in rural communities
+                          Just like any other entrepreneur out there, Emmanuel
+                          dreams of expanding his business. However, one major
+                          challenge he faces is the means of transport. Now that
+                          transport fares have hiked as a result of the ongoing
+                          pandemic, transporting large quantities of shopping
+                          bags from his home to the market is very costly.
+                          Emmanuel plans to overcome this challenge by buying a
+                          bicycle. The long-term goal however is to buy his own
+                          machines and employ people in the business.
                         </div>
                       </div>
                     </div>
